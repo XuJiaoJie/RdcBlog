@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/iv_pullheader"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/tv_pullheader" />
+    <ProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toStartOf="@+id/tv_pullheader"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Large"
+        android:id="@+id/pb_pullheader"
+        android:visibility="gone" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="下拉刷新..."
+        android:textSize="18sp"
+        android:id="@+id/tv_pullheader"
+        android:layout_centerInParent="true"
+        android:textIsSelectable="false" />
+
+
+</RelativeLayout>

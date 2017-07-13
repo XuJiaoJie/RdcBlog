@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/pc_nickname_edit_text"
+        android:paddingLeft="10dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_width="match_parent"
+        android:textCursorDrawable="@drawable/pc_color_cursor"
+        android:layout_height="wrap_content">
+        <requestFocus>
+
+        </requestFocus>
+    </EditText>
+
+</LinearLayout>

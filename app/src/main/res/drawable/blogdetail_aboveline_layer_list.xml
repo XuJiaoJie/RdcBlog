@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- This is the main color-->
+    <item>
+           <shape> <solid android:color="#d0d0d0"/> </shape>  <!-- 边框颜色-->
+    </item>
+
+    <item android:top="0.8dp" ><!-- 给View的上 左 右设置8dp的边框 -->
+
+        <shape>  <solid android:color="#f4f4f4" />
+
+
+        </shape> <!-- View填充颜色 -->
+    </item>
+</layer-list>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="blocksDescendants"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_item_bg"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:elevation="5dp">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/photo_empty_photo"
+            />
+
+        <TextView
+            android:id="@+id/tv_photo_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="次考试饭卡上的看法士大夫立刻看得见啊风景卡拉诞节发生了；的方式拉动房价卡萨丁了飞机撒都浪费空间啊手动阀手动阀，买三房f萨达姆，烦恼圣诞快乐反光镜单反"
+            android:maxLines="3"
+            android:maxWidth="50dp"
+            android:ellipsize="end"
+          />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <com.android.rdc.rdcblog.bloglist.view.defined.RoundImageView
+                android:id="@+id/iv_photo_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/bloglist_img_user"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tv_photo_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/iv_photo_icon"
+                android:text="分享于 昨天15:03"
+                android:textSize="14sp"
+                android:gravity="center_vertical"/>
+
+            <LinearLayout
+                android:id="@+id/ll_photo_love"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ll_photo_comment"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ib_photo_love"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/iv_photo_love"
+                    android:focusable="false"
+                    android:clickable="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_photo_love"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_photo_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ib_photo_comment"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/iv_photo_comment"
+                    android:focusable="false"
+                    android:clickable="true"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_photo_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:text="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

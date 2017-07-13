@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/iv_photo_page"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        />
+
+    <LinearLayout
+        android:id="@+id/photo_ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:alpha="0.5"
+        android:background="@android:color/black"
+        android:visibility="visible"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_see_photo_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="此处美景赌局一别"
+            android:textColor="#ffffff"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="17sp"/>
+
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/photo_rl_comm"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            >
+
+            <com.android.rdc.rdcblog.bloglist.view.defined.RoundImageView
+                android:id="@+id/iv_see_photo_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bloglist_img_user"/>
+
+            <LinearLayout
+                android:id="@+id/seephoto_ll_love"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_see_photo_icon"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iv_photo_love"
+                    />
+
+                <TextView
+                    android:id="@+id/seephoto_tv_love"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="赞"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/seephoto_ll_love"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iv_photo_comment"
+                    />
+
+                <TextView
+                    android:id="@+id/seephoto_tv_comm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="评论"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"/>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/bloglist_good"
+                android:scaleType="fitCenter"
+                android:src="@drawable/iv_photo_love"/>
+
+            <TextView
+                android:id="@+id/bloglist_good"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/bloglist_comment_icon"
+                android:gravity="center_vertical"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:id="@+id/bloglist_comment_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/bloglist_comment_sum"
+                android:background="#00000000"
+                android:src="@drawable/iv_photo_comment"/>
+
+            <TextView
+                android:id="@+id/bloglist_comment_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</FrameLayout>

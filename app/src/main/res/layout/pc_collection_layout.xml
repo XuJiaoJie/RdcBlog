@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pc_bottom_background"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="@color/pc_background"
+        android:layout_width="match_parent"
+        android:layout_height="47dp">
+        <ImageView
+            android:id="@+id/pc_iv_collection_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="3dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/pc_iv_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/title_text_m"
+            android:textColor="@color/black"
+            android:text="我的收藏"/>
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_marginTop="0.5dp"
+        android:background="@color/pc_background"
+        android:id="@+id/pc_collect_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ExpandableListView
+            android:id="@+id/pc_collect_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ExpandableListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

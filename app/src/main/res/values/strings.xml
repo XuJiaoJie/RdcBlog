@@ -1,0 +1,100 @@
+<resources>
+
+
+    <string name="app_name">研发博客</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="signup_spinner_group">方向</string>
+
+    <string name="blog_sort_front">前端</string>
+    <string name="blog_sort_android">安卓</string>
+    <string name="blog_sort_backstage">后台</string>
+    <string name="blog_sort_C">C++</string>
+
+
+    <string name="border_top">Border Top</string>
+    <string name="border_bottom">Border Bottom</string>
+    <string name="image_url">Image Url</string>
+
+
+    <string name="sliding_menu_bolg">博客</string>
+    <string name="sliding_menu_picturewall">照片</string>
+    <string name="sliding_menu_mycenter">我的</string>
+    <string name="blog_list_name">博客</string>
+    <string name="blog_sort_new">最新</string>
+    <string name="photo_title">照片</string>
+
+
+    <string name="action_settings">Personal center</string>
+    <string name="introduction_of_rdc">"        "计算机工程研发中心起步于遥远的2001年，创立之初由20位优秀导师、20多名研究生
+        及60多名本科生组成。"\n""        "新形势下，中心始终坚持以科学发展观统领全局，紧密围绕学校中心工作开展各项工作，承担了大量的纵、横向课题，
+        取得了突出的成绩，为我校科研发展和人才培养做出了积极的贡献。
+    </string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="title_activity_pcsettings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="logout">注销账号</string>
+    <string name="pc_title">我的</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_see_photo_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/black"
+        android:animateLayoutChanges="true"
+        >
+
+        <ImageButton
+            android:id="@+id/ib_see_photo_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ib_see_photo_back"
+            />
+
+        <TextView
+            android:id="@+id/tv_see_photo_title_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="2016年7月12日"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_see_photo_title_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/tv_see_photo_title_date"
+            android:text="09:25"
+
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            />
+
+        <ImageButton
+            android:id="@+id/ib_see_photo_more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ib_see_photo_more"
+            />
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_see"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

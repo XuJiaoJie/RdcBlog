@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/pc_show_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="12dp"
+            android:text="12"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/view1"
+                android:layout_centerHorizontal="true"
+                android:layout_width="3dp"
+                android:layout_height="15dp"
+                android:background="@color/grey"/>
+            <ImageView
+                android:layout_below="@id/view1"
+                android:id="@+id/point"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerHorizontal="true"
+                android:tint="@color/grey"
+                android:src="@drawable/point"/>
+            <View
+                android:layout_below="@id/point"
+                android:layout_centerHorizontal="true"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"/>
+
+            <!--<ImageView-->
+                <!--android:id="@+id/pc_iv_line"-->
+                <!--android:layout_width="10dp"-->
+                <!--android:layout_below="@id/point"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:src="@drawable/pc_timeline_line"/>-->
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/pc_show_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black"
+            android:text="12月"
+            android:textStyle="normal"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pc_history_passage_title"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:paddingRight="3dp"
+        android:ellipsize="end"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/black"
+        android:text="Pokemon Go 为什么这么火——我们能从中学到什么？"/>
+</LinearLayout>

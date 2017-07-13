@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="group">
+        <item>前端</item>
+        <item>后台</item>
+        <item>安卓</item>
+        <item>C++</item>
+    </string-array>
+
+</resources>

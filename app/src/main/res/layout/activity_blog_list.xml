@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <ImageButton
+            android:id="@+id/imbtm_back_menu"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_format_list_bulleted_black_36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitCenter"
+            android:onClick="toggle"
+            android:background="@color/buttonBackground"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blog_list_name"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+        <ImageButton
+            android:id="@+id/imbtm_add_blog"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@color/buttonBackground"
+            android:src="@drawable/ic_note_add_black_36dp"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/imbtm_search_blog"
+            android:layout_marginRight="8dp"/>
+
+        <ImageButton
+            android:id="@+id/imbtm_search_blog"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/buttonBackground"
+            android:src="@drawable/ic_search_black_36dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="fitCenter"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#f3f3f3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btm_new_blog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/buttonBackground"
+                android:text="@string/blog_sort_new"
+                android:textSize="14sp"
+                android:textColor="@android:color/holo_red_light"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btm_front_blog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/buttonBackground"
+                android:text="@string/blog_sort_front"
+                android:textSize="14sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btm_android_blog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/buttonBackground"
+                android:text="@string/blog_sort_android"
+                android:textSize="14sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btm_backstage_blog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/buttonBackground"
+                android:text="@string/blog_sort_backstage"
+                android:textSize="14sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btm_C_blog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/buttonBackground"
+                android:text="@string/blog_sort_C"
+                android:textSize="14sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#ffffff">
+        <View
+            android:id="@+id/view_selected_line"
+            android:layout_width="78dp"
+            android:layout_height="2dp"
+            android:background="@android:color/holo_red_light"/>
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_selected_blog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowAnimationStyle">@style/Theme.Animation</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+    <!--登录界面-->
+    <style name="LoginTheme" parent="AppTheme">
+        <item name="android:colorAccent">#ffffff</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowAnimationStyle">@style/Theme.Animation</item>
+    </style>
+
+
+
+    <!--一般的界面切换动画-->
+    <style name="Theme.Animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_in_from_right</item>     <!--A1退出-->
+        <item name="android:activityOpenExitAnimation">@anim/anim_out_from_left</item>      <!--A2出现-->
+        <item name="android:activityCloseEnterAnimation">@anim/anim_in_from_left</item>     <!--A1出现-->
+        <item name="android:activityCloseExitAnimation">@anim/anim_out_from_right</item>    <!--A2退出-->
+    </style>
+
+
+    <style name="BlogTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+
+    <style name="swipeBack" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_out_from_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_out_from_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_in_from_left</item>
+
+    </style>
+
+    <style name="DownTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/DownTheme.Animition</item>
+    </style>
+    <style name="DownTheme.Animition" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_in_from_above</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_out_from_bottom</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_out_from_above</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_out_from_bottom</item>
+    </style>
+
+
+    <style name="UpTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/UpTheme.Animation</item>
+
+    </style>
+    <style name="UpTheme.Animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_out_from_bottom</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_out_from_above</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_in_from_bottom</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_in_from_above</item>
+    </style>
+
+
+
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+
+
+    <!--启动界面-->
+    <style name="LaunchTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowAnimationStyle">@style/Theme.Animation</item>
+    </style>
+
+    <style name="LaunchTheme.Animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenExitAnimation">@anim/anim_out_from_left</item>
+        <item name="android:activityOpenEnterAnimation">@anim/anim_in_from_right</item>
+    </style>
+
+
+
+    <style name="ImageTranslucentTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+
+
+</resources>

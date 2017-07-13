@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.android.rdc.rdcblog.blogdetail.view.BlogDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/blogdetail_bottomline_layer_list"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_detail_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:adjustViewBounds="true"
+            android:background="#ffffff"
+            android:contentDescription="back"
+            android:padding="2dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blogdetail_btn_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="详情"
+            android:textColor="#414040"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/im_detail_favor"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/im_detail_share"
+            android:background="#ffffff"
+            android:contentDescription="favor"
+            android:padding="5sp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blogdetail_btn_favor"/>
+
+        <ImageButton
+            android:id="@+id/im_detail_share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="11dp"
+            android:background="#ffffff"
+            android:contentDescription="share"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blogdetail_btn_share"/>
+
+    </RelativeLayout>
+
+    <com.android.rdc.rdcblog.blogdetail.view.PullLinearLayout
+        android:id="@+id/pl_blogdetail_pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_detail_bottom"
+        android:layout_below="@+id/rl_detail_title"
+        android:orientation="vertical">
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--  <ListView
+              android:layout_width="match_parent"
+              android:id="@+id/lv_detail_content"
+              android:layout_height="match_parent"
+              android:dividerHeight="0.5dp" />-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+                <RelativeLayout
+                    android:id="@+id/rl_detail_bloger"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="#f3f3f3">
+
+                    <ImageView
+                        android:id="@+id/im_comment_item_blogerpng"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:baselineAlignBottom="false"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/blogdetail_iv_cat"/>
+
+                    <TextView
+                        android:id="@+id/tv_detail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/im_comment_item_blogerpng"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toEndOf="@id/im_comment_item_blogerpng"
+                        android:text="某喵"
+                        android:textColor="#4f8ffd"
+                        android:textIsSelectable="true"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_detail_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/tv_detail_name"
+                        android:layout_below="@id/tv_detail_name"
+                        android:text="发表于   7月26日 14:18"
+                        android:textColor="#a0a0a0"
+                        android:textSize="13sp"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_detail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/rl_detail_bloger">
+
+                    <TextView
+                        android:id="@+id/tv_detail_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff"
+                        android:padding="12dp"
+                        android:text="二、 ScrollView、ListView嵌套结构碰到的问题     不多说，直接看失败例子：             &lt;ScrollView         android:id=&quot;@+id/act_solution_1_sv&quot;         android:layout_width=&quot;fill_parent&quot;         android:layout_height=&quot;fill_parent&quot;>         &lt;LinearLayout             android:layout_width=&quot;fill_parent&quot;             android:layout_height=&quot;wrap_content&quot;             android:orientation=&quot;vertical&quot;>             &lt;TextView                 android:layout_width=&quot;fill_parent&quot;                 android:layout_height=&quot;wrap_content&quot;                 android:text=&quot;\nListView上方数据\n&quot; />             &lt;ListView                 android:id=&quot;@+id/act_solution_1_lv&quot;                 android:layout_width=&quot;fill_parent&quot;                 android:layout_height=&quot;wrap_content&quot;>             &lt;/ListView>             &lt;TextView                 android:layout_width=&quot;fill_parent&quot;                 android:layout_height=&quot;wrap_content&quot;                 android:text=&quot;\nListView下方数据\n&quot; />         &lt;/LinearLayout>         &lt;/ScrollView>           ScrollView中只能放一个控件，一般都放LinearLayout，orientation属性值为vertical。在LinearLayout中放需要呈现的内容。ListView也在其中，ListView的高度设为适应自身内容（wrap_content）。粗略一看，应该没有什么问题。但是看下面的实际效果图：              图中黑框的部分就是ListView，里面放了20条数据，但是却只显示了1条。"
+                        android:textColor="#555252"
+                        android:textSize="18sp"
+                        android:clickable="false" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_detail_commentabove"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/rl_detail_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/blogdetail_redline_layer_list"
+                    android:gravity="center_vertical"
+                    android:text="全部评论"
+                    android:textColor="@color/breaknumber"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <com.android.rdc.rdcblog.blogdetail.view.ListViewForScrollView
+                    android:id="@+id/lvfs_detail_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv_detail_commentabove">
+                </com.android.rdc.rdcblog.blogdetail.view.ListViewForScrollView>
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!--</RelativeLayout>-->
+    </com.android.rdc.rdcblog.blogdetail.view.PullLinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/blogdetail_aboveline_layer_list"
+        android:orientation="horizontal"
+        android:clickable="true">
+        <!--  android:background="@android:drawable/editbox_background_normal"-->
+        <Button
+            android:id="@+id/btn_detail_write"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/blogdetail_ovil_layer_list"
+            android:gravity="start|center_vertical"
+            android:paddingStart="13dp"
+            android:text="写评论..."
+            android:textColor="#727272"
+            android:textSize="12sp"/>
+
+        <ImageButton
+            android:id="@+id/im_detail_good"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/im_detail_bad"
+            android:layout_marginRight="5dp"
+            android:layout_toStartOf="@+id/tv_detail_goodnumber"
+            android:background="#f4f4f4"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blogdetail_im_good"/>
+
+        <TextView
+            android:id="@+id/tv_detail_goodnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/im_detail_bad"
+            android:text="0"
+            android:textColor="#000000"/>
+
+        <ImageButton
+            android:id="@+id/im_detail_bad"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/tv_detail_badnumber"
+            android:background="#f4f4f4"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blogdetail_im_bad"/>
+
+        <TextView
+            android:id="@+id/tv_detail_badnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="11dp"
+            android:text="0"
+            android:textColor="#000000"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+

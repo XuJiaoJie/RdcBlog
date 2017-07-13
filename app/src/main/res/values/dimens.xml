@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="mb_height_56">48dp</dimen>
+
+    <dimen name="mb_corner_radius_2">2dp</dimen>
+    <dimen name="mb_corner_radius_4">4dp</dimen>
+    <dimen name="mb_corner_radius_8">8dp</dimen>
+    <dimen name="mb_corner_radius_16">16dp</dimen>
+    <dimen name="mb_width_100">300dp</dimen>
+    <dimen name="mb_width_120">120dp</dimen>
+    <dimen name="mb_width_200">200dp</dimen>
+    <dimen name="mb_height_8">8dp</dimen>
+    <dimen name="mb_height_4">4dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+
+    <!--标题大小-->
+    <dimen name="title_text_n">14dp</dimen>
+    <dimen name="title_text_m">16dp</dimen>
+    <dimen name="title_text_l">18dp</dimen>
+    <dimen name="title_text_xl">20dp</dimen>
+    <dimen name="title_text_xxl">30dp</dimen>
+    <dimen name="title_text_xxxl">40dp</dimen>
+
+
+
+</resources>

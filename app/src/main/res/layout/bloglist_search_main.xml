@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageButton
+            android:id="@+id/blogsearch_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/blogdetail_btn_back"
+            android:scaleType="fitCenter"
+            android:background="@drawable/bloglist_button_pressed"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="7dp"/>
+
+        <com.android.rdc.rdcblog.bloglist.view.defined.DeletableEditText
+            android:id="@+id/blogsearch_deletable_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/blogsearch_back"
+            android:background="@drawable/bloglist_bg_edittext"
+            android:drawableLeft="@drawable/bloglist_imgbtn_search"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/bloglist_imgbtn_searchdelete"
+            android:hint="请输入要搜索的博客名或博主"
+            android:paddingBottom="7dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="9dp"
+            android:paddingTop="7dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp"
+            android:layout_toLeftOf="@+id/blogsearch_imgbtn_search"
+            android:layout_centerVertical="true"
+            android:completionThreshold="1"/>
+
+        <ImageButton
+            android:id="@+id/blogsearch_imgbtn_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/bloglist_search"
+            android:background="@drawable/bloglist_button_pressed"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="7dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/blogsearch_history_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史记录"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="15dp"/>
+
+        <ImageButton
+            android:id="@+id/blogsearch_delete_history"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bloglist_history_delete"
+            android:scaleType="fitCenter"
+            android:background="@drawable/bloglist_button_pressed"
+            android:layout_marginRight="9dp"/>
+
+    </RelativeLayout>
+
+
+
+    <com.android.rdc.rdcblog.bloglist.view.defined.SearchTipLinearLayout
+        android:id="@+id/bloglist_search_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.android.rdc.rdcblog.bloglist.view.defined.SearchTipLinearLayout>
+
+    <TextView
+        android:id="@+id/blogsearch_suggest_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="系统推荐"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="15dp"/>
+
+    <com.android.rdc.rdcblog.bloglist.view.defined.SearchTipLinearLayout
+        android:id="@+id/blogsearch_search_suggest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.android.rdc.rdcblog.bloglist.view.defined.SearchTipLinearLayout>
+
+    <!--<com.android.rdc.rdcblog.bloglist.view.defined.RefreshListView-->
+        <!--android:id="@+id/blogsearch_listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:visibility="gone"/>-->
+
+    <FrameLayout
+        android:id="@+id/bloglist_flt_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#bebebe</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#e0374a</color>
+    <color name="colorAccent_dark">#b62e3d</color>
+
+
+    <!--侧滑栏-->
+    <color name="slideMenu">#2a2e3d</color>
+    <color name="slideingMenuUnselected">#2a2e3d</color>
+    <color name="slideMenu_text">#5c606f</color>
+    <color name="slidingMenuSelected">#e0374a</color>
+    <color name="logOffSelected">#a4ef1818</color>
+
+
+    <!--个人中心-->
+    <color name="pc_selected">#f2f2f2</color>
+    <color name="breaknumber">#000000</color>
+    <color name="rednumber">#ef1818</color>
+    <color name="pc_bottom_background">#e1e1e1e1</color>
+    <color name="pc_background">#ffffff</color>
+    <color name="tab_layout_bg">#ffffff</color>
+    <color name="ll_click_background">#5ecaece5</color>
+
+    <color name="main_text">#5b5b5b</color>
+
+    <color name="white">#ffffff</color>
+    <color name="photo_bg">#e4e4e4</color>
+
+    <color name="buttonBackground">#00000000</color>
+    <color name="buttonpress">#cac7c7</color>
+
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="red">#FF40</color>
+    <color name="black">#FF222222</color>
+    <color name="blue">#c80a6fb3</color>
+    <color name="grey">#c9e9e4e4</color>
+
+
+    <color name="blog_publish_pressed">#e0374a</color>
+    <color name="blog_publish">#fd6360</color>
+    <color name="blog_public_toolbar">#fd6360</color>
+
+    <color name="bg">#f4f4f4</color>
+
+
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:id="@+id/rl_comment_commentitem">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:id="@+id/im_comment_item_blogerpng"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            android:src="@drawable/blogdetail_iv_cat"
+            android:baselineAlignBottom="false" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_comment_item_name"
+            android:layout_toEndOf="@id/im_comment_item_blogerpng"
+            android:layout_alignTop="@id/im_comment_item_blogerpng"
+            android:layout_marginStart="11dp"
+            android:text="某喵"
+            android:textColor="#4f8ffd"
+            android:textIsSelectable="true"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_comment_item_time"
+            android:text="7月26日 14:18"
+            android:textColor="#a0a0a0"
+            android:textSize="13sp"
+            android:layout_alignBottom="@+id/im_comment_item_blogerpng"
+            android:layout_alignStart="@+id/tv_comment_item_name" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_comment_commentitem"
+        android:paddingStart="66dp"
+        android:text="哈哈哈哈哈哈哈哈嘻嘻嘻嘻嘻嘻嘻嘻"
+        android:textColor="#3f3d3d"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/tv_comment_item_content" />
+</RelativeLayout>

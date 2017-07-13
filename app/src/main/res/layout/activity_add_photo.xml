@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/bg">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_photo_add_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/photo_btn_back"
+            android:scaleType="fitCenter"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="上传照片"
+            android:textColor="@color/main_text"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_photo_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:text="完成"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/main_text"
+           />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/et_photo_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:hint="请输入照片描述..."
+        android:gravity="left"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:textSize="18sp"
+        android:background="@null"
+        />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5.7">
+
+            <ImageView
+                android:id="@+id/iv_photo_see"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/photo_empty_photo"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_photo_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/fab_photo_add"
+                app:backgroundTint="@color/rednumber"
+                app:fabSize="normal"
+                app:elevation="6dp"
+                app:borderWidth="0dp"
+                app:pressedTranslationZ="12dp"
+                />
+
+        </RelativeLayout>
+
+
+
+
+</LinearLayout>

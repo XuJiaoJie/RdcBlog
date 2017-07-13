@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\androidAppCode\\svncode\\RdcAndroid\\swipeBackLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\shadow_left.png",
+        "source": "D:\\androidAppCode\\svncode\\RdcAndroid\\swipeBackLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\shadow_left.png"
+    },
+    {
+        "merged": "D:\\androidAppCode\\svncode\\RdcAndroid\\swipeBackLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\shadow_bottom.png",
+        "source": "D:\\androidAppCode\\svncode\\RdcAndroid\\swipeBackLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\shadow_bottom.png"
+    },
+    {
+        "merged": "D:\\androidAppCode\\svncode\\RdcAndroid\\swipeBackLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\shadow_right.png",
+        "source": "D:\\androidAppCode\\svncode\\RdcAndroid\\swipeBackLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\shadow_right.png"
+    }
+]

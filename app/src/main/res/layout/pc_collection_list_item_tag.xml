@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:background="@drawable/pc_bg_exp_lv">
+
+    <TextView
+        android:id="@+id/pc_tv_collect_list_item_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="安卓"
+        android:textSize="@dimen/title_text_m"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e7efefef">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/rl_publish_titlebar">
+
+        <ScrollView
+            android:id="@+id/sv_publish"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/et_publish_title"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:hint="博客标题"
+                    android:maxLines="1"
+                    android:gravity="center_vertical"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_publish_select"
+                    android:layout_below="@+id/et_publish_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/blog_publish_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="类别："
+                        android:textColor="#202020"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"/>
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/blog_publish_type"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/rb_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="前端"
+                            android:checked="true"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"/>
+                        <RadioButton
+                            android:id="@+id/rb_android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="安卓"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"/>
+                        <RadioButton
+                            android:id="@+id/java"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="后台"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"/>
+                        <RadioButton
+                            android:id="@+id/c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C++"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"/>
+
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+                <com.android.rdc.rdcblog.bloglist.view.defined.PictureAndTextEditorView
+                    android:id="@+id/et_publish_content"
+                    android:layout_below="@+id/rl_publish_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="160dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:background="@color/white"
+                    android:hint="请输入博客正文内容...."
+                    android:gravity="top"
+                    android:textSize="15sp"/>
+
+                <ImageButton
+                    android:id="@+id/ibtn_add_pic"
+                    android:layout_below="@+id/et_publish_content"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/blog_publish_add_pic"
+                    android:background="#e7efefef"
+                    android:scaleType="fitCenter"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:onClick="pickImage"/>
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_publish"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="确定发表"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"
+            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true"
+            android:onClick="publishOnClick"
+            android:background="@drawable/bg_blog_publish_button"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_publish_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blog_public_toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ibtn_blogpublish_back"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:onClick="backClick"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="博客发表"
+            android:textColor="#ffffff"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
