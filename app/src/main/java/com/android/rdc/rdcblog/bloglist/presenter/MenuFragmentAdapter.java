@@ -13,15 +13,10 @@ import java.util.List;
 public class MenuFragmentAdapter extends FragmentPagerAdapter {
     private List<Fragment> list;
 
-    public MenuFragmentAdapter(FragmentManager fm) {
-        super(fm);
-    }
-
     public MenuFragmentAdapter(FragmentManager fm, List<Fragment> list) {
         super(fm);
         this.list = list;
     }
-
     @Override
     public Fragment getItem(int position) {
         return list.get(position);
