@@ -44,9 +44,9 @@ public class BlogListActivity extends AppCompatActivity implements View.OnClickL
 	private Button btn_logOff;
 	private long exitTime = 0;
 
+
 	private ImageView ivIcon;
 	private TextView tvUserName;
-
 	private ImageView ivBlog, ivPhoto, ivPc;
 	private TextView tvBlog, tvPhoto, tvPc;
 

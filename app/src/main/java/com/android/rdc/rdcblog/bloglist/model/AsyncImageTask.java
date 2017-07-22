@@ -1,22 +1,6 @@
 package com.android.rdc.rdcblog.bloglist.model;
 
-import android.graphics.drawable.Drawable;
-import android.os.Handler;
-import android.os.Message;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.lang.ref.SoftReference;
-import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
-
-/**
- * Created by PC on 2016/8/5.
- */
 //public class AsyncImageTask {
 //    ExecutorService executorService = Executors.newCachedThreadPool();    //开线程池
 //    private Map<String, SoftReference<Drawable>> imageMap;        //缓存图片 把图片的软引用放到map中
